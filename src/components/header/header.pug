@@ -1,0 +1,84 @@
+header.header.header-js
+    .outer
+        .inner
+            .header__content
+                a(href="/").logo
+                    img(src="./images/logo.png" alt="Логотип")
+                .burger.hamburger--js
+                    span
+                .nav-container
+                    nav.nav 
+                        a(href="#about" data-backdrop="link") О нас
+                        a(href="#event" data-backdrop="link") События
+                        a(href="#history" data-backdrop="link") История путешествий
+                        a(href="#enter" data-backdrop="link") Вступить в клуб
+.welcome
+    .outer
+        .inner
+            h1 Счастье
+                strong в движении
+            .description 
+                p Наверное, у каждого мужчины есть желание управлять мотоциклом, ездить в компании друзей по дорогам нашей прекрасной страны, ощущая свободу, романтику и восторг, от того, что именно в эту минуту ты находишься на пике своего счастья. 
+                p Ветер, приятный рокот мотора, дорога, уходящая за горизонт и чувство плеча объединяет нас — мотоциклистов «Деловой России».
+section.club#about 
+    .outer 
+        .inner 
+            h2 Бизнес-клуб
+            .description 
+                p Сообщество «МотоКрылья» родилось 20 августа 2020 года, когда мы осуществили нашу первую командную поездку в Кострому и Иваново. Эта поездка определила, что у нас единые ценности и мы готовы путешествовать вместе.
+                p Бизнес клуб сообщество родилось под крылом общероссийской общественной организации «Деловая Россия».
+            h3 Участники клуба
+            .slider.slider-js 
+                .swiper-wrapper 
+                    .swiper-slide
+                        .img
+                            img(src="./images/titov.png" alt="Фотография")
+                        .content
+                            p Титов Павел
+                            p Президент клуба
+                    .swiper-slide
+                        .img
+                            img(src="./images/ildar.png" alt="Фотография")
+                        .content
+                            p Ильдар Шайхутдинов
+                            p Председатель клуба
+                    .swiper-slide
+                        .img
+                            //- img(src="./images/ildar.png" alt="Фотография")
+                        .content
+                            p Константин Иванов
+                            p Советник
+                    .swiper-slide
+                        .img
+                            //- img(src="./images/ildar.png" alt="Фотография")
+                        .content
+                            p Олег Бадера
+                            p Советник
+                .swiper-scrollbar
+section.event#event
+    .outer 
+        .inner 
+            .content
+                h2 События
+                p.date 4–9 сентября, 2023
+                p.title Москва —<br>Алтай
+                a(href="#").link Посмотреть маршрут  
+                    span 192 кб, PDF
+                .decor
+                    .decor__container
+                        img(src="./images/map.svg" alt="Карта")
+section.form#enter 
+    .outer 
+        .inner 
+            .form__container 
+                h2 Подать заявку на&nbsp;вступление в&nbsp;клуб
+                .text
+                    p Помимо водительского удостоверения категории «А», для вступления в «МотоКрылья» необходимо:
+                    ul 
+                        li — Быть топ-менеджером или владельцем бизнеса; 
+                        li — Быть действующим членом «Деловой России»
+                form(action="")
+                    +input('Имя Фамилия Отчество', 'text','fio')
+                    +input('Электронная почта или телефон', 'text','mailorphone')
+                    +textarea('Буквально пара предложений о компании или проекте', 'text', 'comment')
+                    button(type="submit") Отправить
