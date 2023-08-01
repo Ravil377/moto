@@ -7141,7 +7141,7 @@ ol {
 .nav a {
   color: #000;
   font-family: Inter;
-  font-size: 1rem;
+  font-size: 1.875rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -7151,6 +7151,7 @@ ol {
 @media (min-width: 992px) {
   .nav a {
     color: #FFF;
+    font-size: 1rem;
   }
 }
 .nav a:not(:last-child)::after {
