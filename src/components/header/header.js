@@ -2,6 +2,8 @@ import Swiper, { Autoplay, Scrollbar, Navigation, EffectFade, Thumbs } from "swi
 Swiper.use([Autoplay, Scrollbar, Navigation, EffectFade, Thumbs]);
 
 const slider = document.querySelector('.slider-js');
+const slider2 = document.querySelector('.background-js');
+
 
 if (slider) {  
     var Slider = new Swiper(slider, {
@@ -22,5 +24,16 @@ if (slider) {
           },
         },
     });
+}
+
+if (slider2) {  
+  var Slider2 = new Swiper(slider2, {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      effect: 'fade',
+      autoplay: {
+        delay: 5000,
+      },
+  });
 }
 
